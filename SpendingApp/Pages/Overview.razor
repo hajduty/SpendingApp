@@ -1,0 +1,43 @@
+﻿@page "/"
+
+<PageTitle>Overview</PageTitle>
+<div class="flex flex-col">
+    <div class="mt-10 lg:mx-12 sm:mx-0 md:mx-12">
+        <h1 class="text-[#bdb441] text-4xl">Overview</h1>
+    </div>
+    <div class="my-6 flex flex-wrap justify-center align-middle lg:space-x-16 lg:mx-24 md:mx-0">
+        <div class="bg-[#202020] mb-4 h-80 w-96 rounded-3xl shadow-xl">
+            <h1 class="text-[#a69d3a] mx-5 my-3 text-xl">New entry</h1>
+        </div>
+        <div class="flex flex-col justify-between align-middle">
+            <div class="bg-[#202020] mb-4 h-36 w-96 rounded-3xl shadow-xl">
+                <h1 class="text-[#a69d3a] mx-5 my-3 text-xl">Balance</h1>
+                <div class="flex flex-col items-center">
+                    <h1 class="text-4xl text-[#d8ce46]">26000kr</h1>
+                    <h1 class="text-[#a69d3a]">Budget: 32000kr</h1>
+                </div>
+            </div>
+            <div class="bg-[#202020] mb-4 h-36 w-96 rounded-3xl shadow-xl">
+                <h1 class="text-[#a69d3a] mx-5 my-3 text-xl">Monthly Difference</h1>
+                <div class="flex align-middle flex-row justify-between mx-8 my-5">
+                    <div class="flex flex-col text-xs align-middle justify-center">
+                        <h1>Current: 26000kr</h1>
+                        <h1>Last Month: 32000kr</h1>
+                    </div>
+                    <div class="flex flex-row items-center text-yellow-500">
+                        <div class="w-10 h-10">
+                            <SpendingApp.Shared.Icons.Graph/>
+                        </div>
+                        <h1 class="text-3xl text-red-500">14.28%</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#202020] mb-4 h-80 w-96 rounded-3xl shadow-xl">
+            <h1 class="text-[#a69d3a] mx-5 my-3 text-xl">Percentage</h1>
+        </div>
+        <div class="bg-[#202020] mb-4 h-80 w-96 rounded-3xl shadow-xl">
+            <h1 class="text-[#a69d3a] mx-5 my-3 text-xl">Monthly Activity</h1>
+        </div>
+    </div>
+</div>

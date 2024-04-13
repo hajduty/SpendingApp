@@ -1,0 +1,11 @@
+﻿@inherits LayoutComponentBase
+<div class="bg-[#1b1b1b] min-h-screen flex">
+    <div class="flex justify-center align-middle text-amber-200 grow">
+        <div class="sidebar hidden md:block">
+            <NavMenu />
+        </div>
+        <main class="grow">
+            @Body
+        </main>
+    </div>
+</div>

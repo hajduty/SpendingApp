@@ -1,0 +1,46 @@
+﻿@using System.Diagnostics;
+
+<div class="bg-[#202020] flex h-full w-80 justify-center py-40">
+    <div class="mx-20 flex grow flex-col space-y-10 text-gray-400">
+
+        <NavButton Name="Overview" IndexChange="HandleNavChange" Index="1" SelectedNav="selectedNav">
+            <Icon>
+                <SpendingApp.Shared.Icons.Barchart />
+            </Icon>
+        </NavButton>
+
+        <NavButton Name="Monthly History" IndexChange="HandleNavChange" Index="2" SelectedNav="selectedNav">
+            <Icon>
+                <SpendingApp.Shared.Icons.Calendar />
+            </Icon>
+        </NavButton>
+
+        <NavButton Name="New Entry" IndexChange="HandleNavChange" Index="3" SelectedNav="selectedNav">
+            <Icon>
+                <SpendingApp.Shared.Icons.Pencil2 />
+            </Icon>
+        </NavButton>
+
+        <NavButton Name="Savings Goal" IndexChange="HandleNavChange" Index="4" SelectedNav="selectedNav">
+            <Icon>
+                <SpendingApp.Shared.Icons.Pin />
+            </Icon>
+        </NavButton>
+
+        <NavButton Name="Settings" IndexChange="HandleNavChange" Index="5" SelectedNav="selectedNav">
+            <Icon>
+                <SpendingApp.Shared.Icons.Gear />
+            </Icon>
+        </NavButton>
+
+    </div>
+</div>
+
+@code {
+    private int selectedNav = 1;
+
+    private void HandleNavChange(int index)
+    {
+        selectedNav = index;
+    }
+}
